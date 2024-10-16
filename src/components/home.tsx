@@ -19,17 +19,11 @@ const createTimeline = () => {
             opacity: 0,
             y: "+=30",
             stagger: 0.5,
-        })
-        .to(".title", {
-            opacity: 0,
-            y: "+=30",
-            delay: 0.2,
-            stagger: 0.5,
         });
     return timeline;
 };
 
-export default function Banner() {
+export default function Home() {
     const compRef = useRef(null)
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
@@ -42,7 +36,8 @@ export default function Banner() {
     return (
         <div ref={compRef} id='Home' className='min-h-screen flex flex-col justify-center items-center lg:w-[100%] text-white text-center'>
             <h2 className='text-3xl my-2 title'>Scott Wares</h2>
-            <p className="title">Senior Software Engineer, code geek and general tech enthusiast</p>
+            <p className="title pt-5">Senior Software Engineer, code geek and general tech enthusiast</p>
+            <p className="title pt-5"> Add image here </p>
             <div className="flex gap-2 justify-center title">
                 <button className='px-[20px] py-[5px] rounded mt-6 border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da] mb-10'>
                     <a href="" download={Download}>Download CV</a>
