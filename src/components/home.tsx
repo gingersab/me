@@ -44,9 +44,9 @@ export default function Home() {
                 </button>
             </div>
             <div className='flex gap-2 justify-center title'>
-                <FiGithub className='bg-gray-900 p-[6px] text-3xl rounded' />
-                <FaLinkedinIn className='bg-gray-900 p-[6px] text-3xl rounded' />
-                <FaStackOverflow className='bg-gray-900 p-[6px] text-3xl rounded' />
+                <a href="https://github.com/gingersab"><FiGithub  className='bg-gray-900 p-[6px] text-3xl rounded' /></a>
+                <a href="https://www.linkedin.com/in/scottbwares/"><FaLinkedinIn className='bg-gray-900 p-[6px] text-3xl rounded' /></a>
+                <a href="https://stackoverflow.com/users/1836030/scott"><FaStackOverflow className='bg-gray-900 p-[6px] text-3xl rounded' /></a>
             </div>
         </div>
     );
