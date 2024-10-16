@@ -11,12 +11,13 @@ import gsap from "gsap"
 import { ScrollTrigger } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger)
-const createTimeline = () => {
+const createTimeline = (compRefRef: React.RefObject<HTMLDivElement>) => {
     const timeline = gsap.timeline({
         scrollTrigger: {
-            trigger: '#intro-Slider',
+            trigger: compRefRef.current,
             start: 'top center',
             end: 'bottom center',
+            toggleActions: "play none none reset",
         },
     });
     timeline.from('#intro-Slider', {
@@ -32,17 +33,17 @@ const createTimeline = () => {
 }
 
 export default function About() {
-    const comp = useRef(null)
+    const compRef = useRef<HTMLDivElement>(null);  
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            createTimeline();
-        }, comp);
+            createTimeline(compRef);
+        }, compRef);
         return () => ctx.revert();
     }, []);
 
 
     return (
-        <div ref={comp} className="py-28 lg:px-44 px-[20px] text-white min-h-screen" id="About" >
+        <div ref={compRef} className="py-28 lg:px-44 px-[20px] text-white min-h-screen" id="About" >
             <h2 className='text-4xl text-bold mb-28 text-center'>About Me</h2>
             <div id="intro-Slider" className='flex lg:flex-row flex-col lg:items-start items-center justify-center gap-36'>
                 <img className=' h-[16rem] w-[50%] lg:mx-20 rounded-xl mb-9' src={img} alt="" />

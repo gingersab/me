@@ -1,7 +1,5 @@
 import { Link } from "react-scroll";
 import { IoHomeOutline, IoPersonOutline } from "react-icons/io5";
-import { LuBaggageClaim } from "react-icons/lu";
-import { HiOutlineLightBulb } from "react-icons/hi";
 
 export default function Menu() {
     return (
