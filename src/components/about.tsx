@@ -80,7 +80,7 @@ export default function About() {
                         </div>
                     </div>
                     <p className='lg:me-40 text-[18px]'>
-                        I'm Scott, and I'm currently a Senior Software Engineer working in the healthcare industry. I mainly focus on backend engineering (which might be obvious, this slide animation is a bit wonky...). I wanted to do a little frontend work as a side project to keep up-to-date, so I made this portfolio site.
+                        I'm Scott, and I'm currently a Senior Software Engineer working in the healthcare industry. I mainly focus on backend engineering (UI/UX isn't really my thing), but I wanted to do a frontend side project to keep up-to-date, so I made this portfolio site.
                     </p>
                     <br />
                     <p className='lg:me-40 text-[18px]'>
