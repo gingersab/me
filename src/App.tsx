@@ -1,10 +1,14 @@
-import './App.css'
+import Banner from "./components/banner"
+import Footer from "./components/footer"
+import Menu from "./components/menu"
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
-    </>
+    < div className='pt-[40px]'>
+      <Banner />
+      <Footer />
+      <Menu />
+    </div>
   )
 }
 
