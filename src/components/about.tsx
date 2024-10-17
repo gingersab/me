@@ -43,7 +43,7 @@ export default function About() {
 
 
     return (
-        <div ref={compRef} className="py-28 lg:px-44 px-[20px] text-white min-h-screen" id="About" >
+        <div ref={compRef} className="py-28 lg:px-44 text-white min-h-screen" id="About" >
             <h2 className='text-4xl text-bold mb-28 text-center'>About Me</h2>
             <div id="intro-Slider" className='flex lg:flex-row flex-col lg:items-start items-center justify-center gap-36'>
                 <img className=' h-[16rem] w-[50%] lg:mx-20 rounded-xl mb-9' src={img} alt="" />
