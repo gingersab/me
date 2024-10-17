@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const createTimeline = (compRef: React.RefObject<HTMLDivElement>) => {
     const timeline = gsap.timeline({
         scrollTrigger: {
-            trigger: compRef.current,  
+            trigger: compRef.current,
             start: "top 80%",
-            end: "bottom 20%",        
+            end: "bottom 20%",
             toggleActions: "play reverse play reverse", // This can be a bit wonky if the DOM element re-enters the viewport before the animation is fully reversed
         },
     });
@@ -26,31 +26,38 @@ const createTimeline = (compRef: React.RefObject<HTMLDivElement>) => {
 };
 
 export default function Home() {
-    const compRef = useRef<HTMLDivElement>(null);  
+    const compRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             if (compRef.current) {
-                createTimeline(compRef); 
+                createTimeline(compRef);
             }
         }, compRef);
         return () => ctx.revert();
     }, []);
 
     return (
-        <div ref={compRef} id="Home" className="min-h-screen flex flex-col justify-center items-center lg:w-[100%] text-white text-center">
-            <h2 className="text-3xl my-2 title">Scott Wares</h2>
-            <p className="title pt-5">Senior Software Engineer, code geek and general tech enthusiast</p>
-            <p className="title pt-5">Add image here</p>
-            <div className="flex gap-2 justify-center title">
-                <button className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da] mb-10">
+        <div ref={compRef} id="Home" className=" max-w-full min-h-screen flex flex-col justify-center items-center w-full text-white text-center px-4 lg:px-0">
+            <h2 className="text-3xl lg:text-5xl my-2 font-bold">Scott Wares</h2>
+            <p className="text-lg lg:text-2xl pt-5">Senior Software Engineer, code geek, and general tech enthusiast</p>
+            <p className="text-lg lg:text-2xl pt-5">Add image here</p>
+
+            <div className="flex gap-4 justify-center mt-6">
+                <button className="px-6 py-2 rounded border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da]">
                     <a href="" download="Download">Download CV</a>
                 </button>
             </div>
-            <div className="flex gap-2 justify-center title">
-                <a href="https://github.com/gingersab"><FiGithub className="bg-gray-900 p-[6px] text-3xl rounded" /></a>
-                <a href="https://www.linkedin.com/in/scottbwares/"><FaLinkedinIn className="bg-gray-900 p-[6px] text-3xl rounded" /></a>
-                <a href="https://stackoverflow.com/users/1836030/scott"><FaStackOverflow className="bg-gray-900 p-[6px] text-3xl rounded" /></a>
+            <div className="flex gap-4 justify-center mt-8">
+                <a href="https://github.com/gingersab">
+                    <FiGithub className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                </a>
+                <a href="https://www.linkedin.com/in/scottbwares/">
+                    <FaLinkedinIn className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                </a>
+                <a href="https://stackoverflow.com/users/1836030/scott">
+                    <FaStackOverflow className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                </a>
             </div>
         </div>
     );
