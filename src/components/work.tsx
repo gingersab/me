@@ -1,11 +1,10 @@
 
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger)
-const createTimeline = (compRef: React.RefObject<HTMLDivElement>) => {
+const createTimeline = () => {
     const timeline = gsap.timeline({
         scrollTrigger: {
             trigger: '#intro-Slider',
@@ -24,7 +23,7 @@ const Experience = () => {
     const compRef = useRef<HTMLDivElement>(null);
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            createTimeline(compRef);
+            createTimeline();
         }, compRef);
         return () => ctx.revert();
     }, []);
