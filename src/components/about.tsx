@@ -73,13 +73,10 @@ export default function About() {
                     </div>
                 </div>
                 <p className="text-base lg:text-[18px] lg:max-w-xl mb-4 py-4 sm:py-5">
-                    I'm Scott, a Senior Software Engineer in the healthcare industry, specializing in backend engineering. This portfolio is a frontend project to keep my skills up-to-date.
+                    I'm Scott, a Senior Software Engineer in the healthcare industry, specializing in backend engineering. I built this portfolio to refresh my skills in frontend and UI development, as well as experimenting with new frontend technologies.
                 </p>
                 <p className="text-base lg:text-[18px] lg:max-w-xl mb-4 py-4 sm:py-5">
-                    My tech stack includes Java (Spring Boot, Hibernate), Python (machine learning and scripting), and Golang for microservice development.
-                </p>
-                <p className="text-base lg:text-[18px] lg:max-w-xl py-4 sm:py-5">
-                    I have extensive experience with containerized deployments (Docker, Kubernetes), Helm, Istio/Gloo for service mesh, and other DevOps practices.
+                    I have extensive commercial experience working with various languages including Java, Spring Boot, Python and Golang. I am also responsible for orchestrating containerized deployments with Docker, Kubernetes, Helm, Istio and Gloo. These are primarly hosted using AWS EC2 and EKS.
                 </p>
             </div>
         </div>

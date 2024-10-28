@@ -40,9 +40,9 @@ export default function Home() {
 
     return (
         <div ref={compRef} id="Home" className=" max-w-full min-h-screen flex flex-col justify-center items-center w-full text-white text-center px-4 lg:px-0">
-            <img src={profile} className=" rounded-full text-lg lg:text-2xl pt-5"></img>
+            <img src={profile} className="rounded-full w-1/2 lg:w-1/6 pt-5" alt="Profile" />
 
-            <h2 className="text-2xl lg:text-4xl my-1 font-bold">Scott Wares</h2>
+            <h2 className="text-3xl lg:text-5xl my-1 font-bold">Scott Wares</h2>
             <p className="text-lg lg:text-2xl pt-2">Father, husband, software engineer, tech geek</p>
             <div className="flex gap-4 justify-center mt-4">
                 <a href="https://github.com/gingersab">
