@@ -1,6 +1,6 @@
 import { FaJava, FaDocker, FaPython, FaAws } from 'react-icons/fa'
 import { FaGolang } from "react-icons/fa6"
-import { SiSpring, SiPostgresql, SiHibernate, SiKubernetes, SiIstio } from 'react-icons/si'
+import { SiSpring, SiPostgresql, SiKubernetes, SiIstio } from 'react-icons/si'
 
 import { useLayoutEffect, useRef } from 'react'
 import gsap from "gsap"
