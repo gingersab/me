@@ -39,50 +39,51 @@ export default function About() {
 
 
     return (
-        <div ref={compRef} className=" max-w-full py-20 px-4 lg:px-44 text-white min-h-screen bg-gray-900" id="About">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-12 lg:mb-28 text-center">About Me</h2>
-            <div id="intro-Slider" className="flex flex-col lg:flex-row lg:items-start items-center justify-center gap-16 lg:gap-36">
-                <div>
-                    <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-10 lg:mb-14">
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <FaJava className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <SiSpring className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <FaGolang className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <FaPython className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <SiPostgresql className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <FaDocker className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <SiKubernetes className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <SiIstio className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
-                            <FaAws className="text-2xl text-[#1484da]" />
-                        </div>
+        <div ref={compRef} className="max-w-full py-20 px-4 lg:px-44 text-white min-h-screen bg-gray-900" id="About">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-12 lg:mb-28 text-center">About Me</h2>
+        <div id="intro-Slider" className="flex flex-col lg:flex-row lg:items-start items-center justify-center gap-16 lg:gap-36">
+            <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-10 lg:mb-14">
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <FaJava className="text-2xl text-[#1484da]" />
                     </div>
-                    <p className="text-base lg:text-[18px] lg:max-w-xl mb-4">
-                        I'm Scott, a Senior Software Engineer in the healthcare industry, specializing in backend engineering. This portfolio is a frontend project to keep my skills up-to-date.
-                    </p>
-                    <p className="text-base lg:text-[18px] lg:max-w-xl mb-4">
-                        My tech stack includes Java (Spring Boot, Hibernate), Python (machine learning and scripting), and Golang for microservice development.
-                    </p>
-                    <p className="text-base lg:text-[18px] lg:max-w-xl">
-                        I have extensive experience with containerized deployments (Docker, Kubernetes), Helm, Istio/Gloo for service mesh, and other DevOps practices.
-                    </p>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <SiSpring className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <FaGolang className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <FaPython className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <SiPostgresql className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <FaDocker className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <SiKubernetes className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <SiIstio className="text-2xl text-[#1484da]" />
+                    </div>
+                    <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
+                        <FaAws className="text-2xl text-[#1484da]" />
+                    </div>
                 </div>
+                <p className="text-base lg:text-[18px] lg:max-w-xl mb-4 py-4 sm:py-5">
+                    I'm Scott, a Senior Software Engineer in the healthcare industry, specializing in backend engineering. This portfolio is a frontend project to keep my skills up-to-date.
+                </p>
+                <p className="text-base lg:text-[18px] lg:max-w-xl mb-4 py-4 sm:py-5">
+                    My tech stack includes Java (Spring Boot, Hibernate), Python (machine learning and scripting), and Golang for microservice development.
+                </p>
+                <p className="text-base lg:text-[18px] lg:max-w-xl py-4 sm:py-5">
+                    I have extensive experience with containerized deployments (Docker, Kubernetes), Helm, Istio/Gloo for service mesh, and other DevOps practices.
+                </p>
             </div>
         </div>
+    </div>
+    
     );
 };
