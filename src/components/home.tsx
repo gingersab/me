@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FiGithub } from 'react-icons/fi';
 import { FaLinkedinIn, FaStackOverflow } from 'react-icons/fa';
+import profile from '../assets/profile.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,23 +41,17 @@ export default function Home() {
     return (
         <div ref={compRef} id="Home" className=" max-w-full min-h-screen flex flex-col justify-center items-center w-full text-white text-center px-4 lg:px-0">
             <h2 className="text-3xl lg:text-5xl my-2 font-bold">Scott Wares</h2>
-            <p className="text-lg lg:text-2xl pt-5">Senior Software Engineer, code geek, and general tech enthusiast</p>
-            <p className="text-lg lg:text-2xl pt-5">Add image here</p>
-
-            <div className="flex gap-4 justify-center mt-6">
-                <button className="px-6 py-2 rounded border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da]">
-                    <a href="" download="Download">Download CV</a>
-                </button>
-            </div>
+            <p className="text-lg lg:text-2xl pt-5">Father, husband, software engineer, tech geek</p>
+            <img src={profile} className=" rounded-full text-lg lg:text-2xl pt-5"></img>
             <div className="flex gap-4 justify-center mt-8">
                 <a href="https://github.com/gingersab">
-                    <FiGithub className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                    <FiGithub className="bg-gray-900 p-1 text-4xl lg:text-5xl rounded" />
                 </a>
                 <a href="https://www.linkedin.com/in/scottbwares/">
-                    <FaLinkedinIn className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                    <FaLinkedinIn className="bg-gray-900 p-1 text-4xl lg:text-5xl rounded" />
                 </a>
                 <a href="https://stackoverflow.com/users/1836030/scott">
-                    <FaStackOverflow className="bg-gray-900 p-2 text-3xl lg:text-4xl rounded" />
+                    <FaStackOverflow className="bg-gray-900 p-1 text-4xl lg:text-5xl rounded" />
                 </a>
             </div>
         </div>

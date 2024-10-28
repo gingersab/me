@@ -2,8 +2,6 @@ import { FaJava, FaDocker, FaPython, FaAws } from 'react-icons/fa'
 import { FaGolang } from "react-icons/fa6"
 import { SiSpring, SiPostgresql, SiHibernate, SiKubernetes, SiIstio } from 'react-icons/si'
 
-import img from '../assets/react.svg'
-
 import { useLayoutEffect, useRef } from 'react'
 import gsap from "gsap"
 import { ScrollTrigger } from 'gsap/all';
@@ -41,10 +39,9 @@ export default function About() {
 
 
     return (
-        <div ref={compRef} className=" max-w-full py-20 px-4 lg:px-44 text-white min-h-screen" id="About">
+        <div ref={compRef} className=" max-w-full py-20 px-4 lg:px-44 text-white min-h-screen bg-gray-900" id="About">
             <h2 className="text-3xl lg:text-4xl font-bold mb-12 lg:mb-28 text-center">About Me</h2>
             <div id="intro-Slider" className="flex flex-col lg:flex-row lg:items-start items-center justify-center gap-16 lg:gap-36">
-                <img className="h-64 lg:h-72 w-full lg:w-[50%] mx-auto lg:mx-20 rounded-xl mb-6 lg:mb-9" src={img} alt="Profile" />
                 <div>
                     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-4 mb-10 lg:mb-14">
                         <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
