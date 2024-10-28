@@ -43,35 +43,32 @@ export default function About() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-12 lg:mb-28 text-center">About Me</h2>
             <div id="intro-Slider" className="flex flex-col lg:flex-row lg:items-start items-center justify-center gap-16 lg:gap-36">
                 <div>
-                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-4 mb-10 lg:mb-14">
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                    <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-10 lg:mb-14">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <FaJava className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <SiSpring className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
-                            <SiHibernate className="text-2xl text-[#1484da]" />
-                        </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <FaGolang className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <FaPython className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <SiPostgresql className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <FaDocker className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <SiKubernetes className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <SiIstio className="text-2xl text-[#1484da]" />
                         </div>
-                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center justify-center">
+                        <div className="bg-gray-900 p-4 rounded-xl flex flex-col items-center">
                             <FaAws className="text-2xl text-[#1484da]" />
                         </div>
                     </div>
